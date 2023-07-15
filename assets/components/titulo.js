@@ -1,16 +1,29 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css } from "lit";
 
 export class Titulo extends LitElement {
-    static styles = [
-        css`
-            :host {
-                display: block;
-            }
-        `
-    ];
+  static styles = [
+    css`
+      :host {
+        display: block;
 
-    render() {
-        return html`titulol`;
-    }
+        color: var(--cor-secundaria, #665e57);
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+        font-family: Exo;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; /* 48px */
+      }
+
+      ::slotted(*) {
+        font-size: inherit;
+        margin: 0;
+      }
+    `,
+  ];
+
+  render() {
+    return html`<slot>Título</slot>`;
+  }
 }
-customElements.define('app-titulo', Titulo);
+customElements.define("app-titulo", Titulo);
