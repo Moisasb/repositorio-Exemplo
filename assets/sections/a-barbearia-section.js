@@ -46,7 +46,7 @@ export class ABarbeariaSection extends LitElement {
         app-quadro {
           width: 335px;
           height: 335px;
-          botfer-radius: 100%
+          border-radius: 100%
 
         app-bolinhas {
             display: flex;
