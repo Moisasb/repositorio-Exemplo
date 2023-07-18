@@ -13,7 +13,7 @@
     body {
 
       margin: 0;
-      width: 100%; /* Smallest View Height */
+      
       height: 100svh;
       background-color: var(--tom-1);
   

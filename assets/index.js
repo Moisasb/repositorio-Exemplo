@@ -10,4 +10,5 @@ export * from "./components/bolinhas"
 export * from './sections/hero-section'
 export * from './sections/a-barbearia-section'
 
+
 // Paginas
