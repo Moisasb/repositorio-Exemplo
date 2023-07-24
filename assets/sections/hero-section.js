@@ -26,7 +26,7 @@ export class HeroSection extends LitElement {
       }
 
       span {
-        color: var(--tom-3);
+        color: var(--tom-2);
         font-weight: 900;
       }
 

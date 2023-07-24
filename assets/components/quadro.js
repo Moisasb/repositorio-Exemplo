@@ -7,14 +7,10 @@ export class QUadro extends LitElement {
         display: flex;
         width: 334px;
         height: 260px;
-        justify-content: center;
-        align-items: center;
-
         border-radius: 8px;
         background: #d9d9d9;
         mix-blend-mode: multiply;
         box-shadow: 0px 24px 34px 0px rgba(0, 0, 0, 0.25);
-
 
         overflow: hidden
       }

@@ -5,8 +5,11 @@ import { section } from "../styles/sections-style";
 export class ServicosSection extends LitElement {
   static styles = [
     section,
-
     css`
+      :host {
+      padding: 2rem 0;
+
+      }
       app-bolinhas {
         --cor-bolinhas: (--tom-3);
 
@@ -21,11 +24,8 @@ export class ServicosSection extends LitElement {
 
       div {
         display: flex;
-
         flex-direction: column;
-
         align-items: center;
-
         gap: 10px;
       }
 
@@ -91,9 +91,12 @@ export class ServicosSection extends LitElement {
        height:120% ;
 
        app-quadro {
-       border-top-left-radius: 
+       width:320px ;
+       height:165px ;
+       border-top-left-radius: ;
+      
 
-       }
+       
 
         }
       }
@@ -108,7 +111,7 @@ export class ServicosSection extends LitElement {
 
       <section>
         <app-quadro>
-            <img alt="imagens serviços 1" />
+            <img alt="serviços-1" />
         </app-quadro>
 
         <aside>

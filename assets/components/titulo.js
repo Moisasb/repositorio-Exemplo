@@ -12,10 +12,10 @@ export class Titulo extends LitElement {
         font-size: 3rem;
         font-style: normal;
         font-weight: 700;
-        line-height: normal; /* 48px */
+        line-height: 100% /* 40px */
       }
 
-      ::slotted(*) {
+      :slotted(*) {
         font-size: inherit;
         margin: 0;
       }

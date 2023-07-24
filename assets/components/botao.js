@@ -8,26 +8,28 @@ export class Botao extends LitElement {
       }
 
       button {
+        width: inherit;
+
         display: inline-flex;
+        height: 34px;
         padding: 10px 30px;
-
-        border: 0;
-
-        justify-content: center;
-
+        justify-content: flex-start;
         align-items: center;
 
-        
         border-radius: 8px;
+        border: 0px;
+        background-color: var(
+          --button-background,
+          color-mix(in srgb, white 20%, var(--tom-2, #b38962))
+        );
 
-        background-color: color-mix(in srgb, white 20%, var(--tom-2, #b38962));
+        /* tipografia*/
 
-        box-shadow: 0px 2px 4px 0px #665e57;
-
-
-       /* tipografia*/
-
-        color: var(--tom-3, #664e38);
+        color: var(
+          --color,
+          color-mix (in srgb, white 20%, var(--tom-3, #664e38))
+        );
+        text-align: center;
         font-family: var(--fonte-titulo);
         font-size: 16px;
         font-style: normal;
@@ -35,21 +37,31 @@ export class Botao extends LitElement {
         line-height: normal;
         white-space: nowrap;
 
-        transition: all 200Ms;
-        cursor: pointer;   
-    
-    }
+        transition: all 200ms;
+        cursor: pointer;
+      }
 
-      button:hover, 
+      button:hover,
       button:active {
-        background-color: var(--tom-2, #b38962);
-        
+        background-color: color-mix(
+          in srgb,white 15%,
+          var(--button-background, var(--tom-2))
+        );
+        color: var(--tom-1);
+      }
+
+      :slotted(*) {
+        width: 24 px;
+        width: 24px;
+        margin: 5px 8px 5px 0em;
       }
     `,
   ];
 
   render() {
-    return html` <button><slot>Pressione</slot></button> `;
+    return html`
+      <button><slot name="icone"></slot> <slot>Pressione </slot></button>
+    `;
   }
 }
 
